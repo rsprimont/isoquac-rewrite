@@ -1,0 +1,11 @@
+[project]
+name = "job"
+version = "0.1.0"
+description = "IsoQuaC Job"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.42.22",
+    "inmoose>=0.9.0",
+    "numpy>=2.4.0",
+]
