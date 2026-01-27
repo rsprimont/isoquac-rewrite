@@ -232,3 +232,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Whitelist frontend lib folder
+!frontend/src/lib/

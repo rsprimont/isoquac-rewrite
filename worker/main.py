@@ -17,7 +17,6 @@ while True:
     job = json.loads(data)
     print(f"Processing {job['job_id']}...")
 
-    # Pass MinIO config to the analysis container
     env_vars = {
         "AWS_ACCESS_KEY_ID": os.getenv("AWS_ACCESS_KEY_ID"),
         "AWS_SECRET_ACCESS_KEY": os.getenv("AWS_SECRET_ACCESS_KEY"),
@@ -28,13 +27,9 @@ while True:
     }
 
     try:
-        # Note: We use network="my-app_default" so it can reach MinIO
-        # You might need to check 'docker network ls' to get the exact name
-        # created by docker-compose. Usually it is foldername_default.
         client.containers.run(
             image=f"isoquac-job:{job['version']}",
             environment=env_vars,
-            # <--- UPDATE THIS to your project network name
             network="isoquac-rewrite_default",
             remove=True
         )

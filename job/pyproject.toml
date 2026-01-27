@@ -9,3 +9,9 @@ dependencies = [
     "inmoose>=0.9.0",
     "numpy>=2.4.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.10",
+    "ty>=0.0.9",
+]
