@@ -10,6 +10,7 @@
     { name: 'Job', href: '/analysis' },
     { name: 'Design of Experiments', href: '/doe' },
     { name: 'Visualisation', href: '/settings' },
+    { name: 'Tools', href: '/tools' },
     { name: 'Tutorials', href: '/tutorials' },
     { name: 'Documentation', href: '/documentation' },
     { name: 'References', href: '/references' },
@@ -32,7 +33,7 @@
       <img src="/isoquac.png" alt="IsoQuac Logo" class="h-11 w-11 flex-shrink-0 inline-block" />
 
       <span class="{isOpen ? 'opacity-100' : 'opacity-0'} ml-2 text-xl no-underline hover:drop-shadow-xl/10 transition-opacity duration-200">
-        IsoQuac
+        IsoQuaC
       </span>
         </a>
     </div>

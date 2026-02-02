@@ -1,18 +1,19 @@
 <script lang="ts">
 	import './layout.css';
 	import Sidebar from '$lib/components/Sidebar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 </script>
 
-<svelte:head>
-  </svelte:head>
+<svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<div class="flex flex-row min-h-screen bg-gray-100">
-  <Sidebar />
+<div class="flex h-screen flex-row overflow-hidden">
+	<Sidebar />
 
-  <main class="flex-1 p-8 overflow-y-auto h-screen">
-    {@render children()} 
-  </main>
+	<div class="relative flex h-screen flex-1 flex-col overflow-y-auto">
+		<main class="flex-1 p-8">{@render children()}</main>
+		<Footer />
+	</div>
 </div>

@@ -1,0 +1,4 @@
+# ignore big files, built executables, and OS generated files
+# send over using scp to server instead
+tools/*
+example-data/*
