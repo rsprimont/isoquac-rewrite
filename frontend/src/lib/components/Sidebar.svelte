@@ -11,7 +11,7 @@
     { name: 'Design of Experiments', href: '/doe' },
     { name: 'Visualisation', href: '/settings' },
     { name: 'Tools', href: '/tools' },
-    { name: 'Tutorials', href: '/tutorials' },
+    { name: 'Tutorials', href: '/documentation/tutorial' },
     { name: 'Documentation', href: '/documentation' },
     { name: 'References', href: '/references' },
     { name: 'About', href: '/about' }
